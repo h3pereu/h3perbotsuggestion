@@ -21,7 +21,7 @@ client.on('message', message =>{
     const command = args.shift().toLowerCase();
  
     if(command === 'suggestion'){
-        client.commands.get('suggestion').run(message, args, client, discord);
+        client.commands.get('suggestion').run(message, args, client);
     } 
 });
 
